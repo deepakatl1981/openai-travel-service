@@ -31,4 +31,5 @@ uvicorn app.main:app --reload --env-file .env --host 127.0.0.1 --port 8000
 curl "http://127.0.0.1:8000/health"
 curl "http://127.0.0.1:8000/api/bus-stops?query=51.5074,-0.1278"
 curl "http://127.0.0.1:8000/api/bus-stops?query=SW1A%201AA"
+curl "http://127.0.0.1:8000/api/bus-stops/490013767X/departures?limit=5"
 ```
